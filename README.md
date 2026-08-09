@@ -1,148 +1,113 @@
-# 🎓 College Club Portal Pro
-
-A modern web application that simplifies college club management by allowing students to discover clubs, register for events, track attendance, receive certificates, and stay updated with announcements.
-
----
-
-## 🚀 Features
-
-- 🔐 Firebase Authentication (Email & Password)
-- 👥 Club Management
-- 🎉 Event Registration
-- 📷 QR Attendance Module
-- 🏆 Certificate Module
-- 🔔 Notification Center
-- 👨‍💼 Admin Dashboard
-- 📊 Student Dashboard
-- 📱 Responsive UI
-
----
-
-## 🛠 Tech Stack
-
-### Frontend
-- React.js
-- React Router DOM
-- Tailwind CSS
-- React Icons
-
-### Backend
-- Firebase Authentication
-- Firebase Firestore
-
-### Tools
-- VS Code
-- Git
-- GitHub
-- Firebase Console
-
----
-
-## 📂 Project Structure
-
-```
+🎓 College Club Portal Pro
+A modern full-stack college club management web application built to help students discover clubs, join communities, register for events, and manage their college activities through a centralized platform.
+🌐 Live Demo: College Club Portal Pro Live App
+🚀 Features
+🔐 Authentication
+Student registration and login using Firebase Authentication
+Protected routes for authenticated users
+Secure logout functionality
+👥 Club Management
+Browse available college clubs
+Join clubs with a single click
+Joined club data stored in Cloud Firestore
+Joined status persists after refresh
+🎉 Event Management
+View upcoming college events
+Register for events
+Track event registrations
+📊 Student Dashboard
+View joined clubs
+Track registered events
+Track certificates and participation
+👨‍💼 Admin Dashboard
+Admin dashboard interface
+Club management section
+Event creation section
+Attendance reporting section
+📷 Additional Modules
+QR-based attendance module
+Certificate section
+Notification center
+Responsive navigation and sidebar
+🛠️ Tech Stack
+Frontend
+React.js
+React Router DOM
+Tailwind CSS
+React Icons
+Backend & Database
+Firebase Authentication
+Cloud Firestore
+Deployment & Tools
+Git
+GitHub
+Vercel
+Firebase Console
+VS Code
+📂 Project Structure
 src/
 │
 ├── components/
-│   ├── Navbar
-│   ├── Sidebar
-│   ├── ClubCard
-│   ├── EventCard
-│   └── QRGenerator
-│
-├── pages/
-│   ├── Home
-│   ├── Login
-│   ├── Register
-│   ├── Clubs
-│   ├── Events
-│   ├── Student Dashboard
-│   ├── Admin Dashboard
-│   ├── Certificates
-│   └── Notifications
+│   ├── Navbar.js
+│   ├── Sidebar.js
+│   ├── ClubCard.js
+│   ├── EventCard.js
+│   ├── ProtectedRoute.js
+│   └── QRGenerator.js
 │
 ├── context/
+│   └── AuthContext.js
+│
+├── pages/
+│   ├── Home.js
+│   ├── Login.js
+│   ├── Register.js
+│   ├── ClubListing.js
+│   ├── EventsPage.js
+│   ├── StudentDashboard.js
+│   ├── AdminDashboard.js
+│   ├── Certificates.js
+│   ├── Notifications.js
+│   └── QRAttendance.js
+│
 ├── services/
-└── assets/
-```
-
----
-
-## ⚙ Installation
-
-Clone the repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/college-club-portal-pro.git
-```
-
-Go inside the project
-
-```bash
+│   └── firebase.js
+│
+├── App.js
+└── index.js
+⚙️ Installation
+1. Clone the repository
+git clone https://github.com/Prajbi/college-club-portal-pro.git
+2. Navigate to the project
 cd college-club-portal-pro
-```
-
-Install dependencies
-
-```bash
+3. Install dependencies
 npm install
-```
-
-Run the project
-
-```bash
+4. Start the application
 npm start
-```
-
----
-
-## 🔥 Firebase
-
-This project uses:
-
-- Firebase Authentication
-- Cloud Firestore
-
-Configure your Firebase credentials inside:
-
-```
+The application will run locally at:
+http://localhost:3000
+🔥 Firebase Integration
+This project uses Firebase for:
+🔐 User Authentication
+☁️ Cloud Firestore database
+👥 Persistent club membership data
+Firebase configuration is available in:
 src/services/firebase.js
-```
-
----
-
-## 📸 Screenshots
-
-- Home Page
-- Student Dashboard
-- Admin Dashboard
-- Clubs Page
-- Events Page
-
-(Add screenshots after deployment.)
-
----
-
-## 🎯 Future Improvements
-
-- Role-Based Authentication
-- Real-time Notifications
-- Event Analytics
-- Certificate Generation
-- Admin Reports
-- Firebase Hosting
-- Mobile Responsive Enhancements
-
----
-
-## 👨‍💻 Developed By
-
-**Prajwal Biradar**
-
+🌐 Deployment
+The application is deployed on Vercel.
+Live Application: Open College Club Portal Pro
+Every new push to the main branch can trigger a new deployment.
+🎯 Future Improvements
+🔒 Role-based authentication
+🔔 Real-time notifications
+📊 Event analytics
+🏆 Automatic certificate generation
+📈 Advanced admin reports
+📱 Further mobile UI improvements
+🗓️ Admin event creation with Firestore
+📷 Fully functional QR attendance tracking
+👨‍💻 Developer
+Prajwal Biradar
 AI & ML Engineering Student
-
----
-
-## ⭐ If you like this project
-
-Give this repository a ⭐ on GitHub.
+⭐ Support
+If you like this project, consider giving the repository a ⭐ on GitHub!
